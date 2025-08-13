@@ -8,7 +8,7 @@ app = FastAPI()
 # CORS configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Adjust if frontend port differs
+    allow_origins=["http://localhost:3000","https://medicaliot.netlify.app"],  # Adjust if frontend port differs
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
